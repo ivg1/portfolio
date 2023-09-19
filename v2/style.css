@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+
+}
+.header > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid black;
+}
