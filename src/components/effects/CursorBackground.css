@@ -1,0 +1,22 @@
+.blurred-bg {
+    /* background: linear-gradient(#8b0000, #2c0000); */
+    background: linear-gradient(#d30000, #001eff);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: rotater 8s linear infinite;
+    position: absolute;
+    filter: blur(60px);
+    z-index: -1;
+
+    top: 100px;
+    left: 40px;
+}
+@keyframes rotater {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(359deg);
+    }
+}
