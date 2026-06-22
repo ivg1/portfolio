@@ -2,11 +2,14 @@ import { useState } from "react";;
 import "./App.css";
 
 //header & footer
-import Header from "./components/Header";
+import Header from "./sections/Header";
+import Footer from "./sections/Footer";
 
 //pages
 import FirstSee from "./sections/FirstSee";
 import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
+import Contact from "./sections/Contact";
 
 //effects
 import CursorBackground from "./components/effects/CursorBackground";
@@ -17,10 +20,21 @@ function App() {
 			<CursorBackground />
 			<Header />
 			<FirstSee />
-			<Projects />
-			<div className="md:px-[15%]">
 
+			<div className="absolute bottom-10 md:bottom-8 right-4 opacity-40">
+                <div className="relative flex ">
+                    scroll
+                    <svg fill="#eeeeee" className="opacity-40 size-7 relative -rotate-20 right-1 -bottom-4" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 302.816 302.816" xmlSpace="preserve" transform="rotate(90)"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_6_" d="M298.423,152.996c-5.857-5.858-15.354-5.858-21.213,0l-35.137,35.136 c-5.871-59.78-50.15-111.403-112.001-123.706c-45.526-9.055-92.479,5.005-125.596,37.612c-5.903,5.813-5.977,15.31-0.165,21.213 c5.813,5.903,15.31,5.977,21.212,0.164c26.029-25.628,62.923-36.679,98.695-29.565c48.865,9.72,83.772,50.677,88.07,97.978 l-38.835-38.835c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l62.485,62.485 c2.929,2.929,6.768,4.393,10.606,4.393s7.678-1.464,10.607-4.393l62.483-62.482C304.281,168.352,304.281,158.854,298.423,152.996z"></path> </g></svg>
+                </div>
+            </div>
+
+			<div className="sm:px-[5%] lg:px-[10%]">
+				<Projects />
+				<Skills />
+				<Contact />
 			</div>
+
+			<Footer />
 		</div>
 	)
 }

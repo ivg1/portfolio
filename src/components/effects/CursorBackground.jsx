@@ -7,9 +7,12 @@ export default function CursorBackground() {
         window.matchMedia("(hover: hover)").matches;
 
     useEffect(() => {
-        if (!enableMouseEffect) return;
-
         const bgThing = document.querySelector(".blurred-bg");
+        const bgThingContainer = document.querySelector(".blurred-bg-container");
+        if (!enableMouseEffect) {
+            bgThingContainer.style.position = "sticky";
+            return;
+        }
         let mouseX = 0;
         let mouseY = 0;
         let x = 0;
@@ -39,7 +42,7 @@ export default function CursorBackground() {
     }, []);
 
     return (
-        <div className="fixed top-0 left-0 -z-1">
+        <div className="blurred-bg-container fixed top-0 left-0 -z-1">
             <div className="blurred-bg"></div>
         </div>
     );
