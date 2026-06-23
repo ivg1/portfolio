@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import Terminal from "../components/Terminal";
 
+import Animations from "../components/animations";
+
 export default function FirstSee() {
     const facts = [
         "16 years old",
@@ -35,7 +37,9 @@ export default function FirstSee() {
                     <div className="text-content p-10 min-h-180">
                         <div className="mb-10">
                             <p className="text-lg">Hi, my name is</p>
-                            <h1 className="lg:text-[200px] text-9xl font-black tracking-tight -mt-4 lg:-mt-8 -ml-2">Ivan</h1>
+                            <Animations.FloatUp duration={0.6}>
+                                <h1 className="lg:text-[200px] text-9xl font-black tracking-tight -mt-4 lg:-mt-8 -ml-2">Ivan</h1>
+                            </Animations.FloatUp>
                         </div>
                         <div>
                             <Terminal text="cat facts.txt" extra={facts} />

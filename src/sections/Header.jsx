@@ -2,13 +2,15 @@ import { Link, useNavigate } from "react-router-dom";
 import Button, { ButtonNoP } from "../components/buttons";
 import { useState } from "react";
 
+import Animations from "../components/animations";
+
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
 
     return (
         <div className="header min-w-full h-25 sticky top-0 left-0 py-4 px-6 z-50">
-            <div className={`rounded-2xl bg-black/20 flex justify-between items-center min-w-full min-h-full border border-borderblack backdrop-blur-lg px-4 ${menuOpen && "rounded-b-none"}`}>
+            <div className={`rounded-2xl bg-black/20 flex justify-between items-center min-w-full min-h-full backdrop-blur-lg px-4 ${menuOpen && "rounded-b-none"}`}>
                 <div className="title flex items-center">
                     <h1 className="text-xl font-bold">ivg1</h1>
                     <span className="text-xl">
