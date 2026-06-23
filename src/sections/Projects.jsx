@@ -27,8 +27,8 @@ export default function Projects() {
 
         },
         {
-            title: "Diy hackpad",
-            description: "One of my favorite hardware projects.\nI still remember how long it took to find the correct MicroPython firmware for usb stuff.",
+            title: "Hackpad",
+            description: "One of my favorite hardware projects.\nI still remember how long it took to find the correct MicroPython firmware and libraries for usb stuff.",
             imgUrl: "/images/diyHackpadThumbnail.png",
 
             hasWebsite: false,
@@ -51,14 +51,16 @@ export default function Projects() {
 
         },
 
-    ]
+    ];
 
     return (
-        <div className="projects w-full h-fit mb-10 max-w-full p-10">
+        <div className="projects w-full h-fit mb-10 max-w-full py-10 scroll-mt-20" id="projects">
             <div>
-                <p className="text-md text-gray2">check out some of my</p>
-                <h1 className="text-6xl font-black tracking-tight">Projects</h1>
-                <div className="projects-list my-10 grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-4">
+                <div className="px-10">
+                    <p className="text-md text-gray2">check out some of my</p>
+                    <h1 className="text-6xl font-black tracking-tight">Projects</h1>
+                </div>
+                <div className="projects-list my-10 grid sm:grid-cols-[repeat(auto-fit,minmax(320px,1fr))] grid-cols-1 gap-4 px-2 sm:px-10">
                     {projects.map((project, i) => (
                         <div className="project-item h-fit rounded-2xl border border-gray1 bg-black/20 backdrop-blur-3xl flex flex-col overflow-clip" key={i}>
                             <div className="flex items-center justify-center w-full relative h-40 z-1 overflow-clip">
@@ -92,7 +94,7 @@ export default function Projects() {
                         </div>
                     ))}
                 </div>
-                <p className="text-lg text-gray2">See the rest of my projects in my <a href="https://github.com/ivg1" target="_blank" className="text-red-500 hover:underline">Github</a></p>
+                <p className="text-md text-center text-gray2">See the rest of my projects on <a href="https://github.com/ivg1" target="_blank" className="text-red-500 hover:underline">Github</a></p>
             </div>
         </div>
     )

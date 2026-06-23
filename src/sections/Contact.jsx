@@ -2,11 +2,11 @@ import Button from "../components/buttons";
 
 export default function Contact() {
     return (
-        <div className="contact w-full h-100 max-w-full p-10">
+        <div className="contact w-full h-100 max-w-full p-10 scroll-mt-20" id="contact">
             <div>
                 <p className="text-md text-gray2">have questions?</p>
                 <h1 className="text-6xl font-black tracking-tight">Contact me</h1>
-                <div className="contact-container mt-10 flex gap-4">
+                <div className="contact-container mt-10 flex flex-col sm:flex-row gap-4">
                     <a href="https://github.com/ivg1" target="_blank">
                         <h1 className="font-bold text-3xl flex items-center hover:text-red-500 max-w-fit max-h-fit transition-colors">
                             Github

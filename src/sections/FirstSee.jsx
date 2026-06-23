@@ -7,8 +7,8 @@ export default function FirstSee() {
         "16 years old",
         "Future Mechanical Engineer",
         "Software & hardware developer",
+        "Learning full-stack development",
         "Living in Cyprus",
-        "Soon-to-be full-stack coder",
         //"Learning fullstack coding",
     ];
 
@@ -29,19 +29,19 @@ export default function FirstSee() {
 }`;
 
     return (
-        <div className="home first-see max-w-screen max-h-screen  min-h-fit w-full relative sm:px-[5%] lg:px-[10%] mb-10">
+        <div className="home first-see max-w-screen max-h-screen  min-h-fit w-full relative sm:px-[5%] lg:px-[10%] mb-10 scroll-mt-20" id="home">
             <div className="flex justify-center items-center w-full h-full">
                 <div className="first-see-content max-w-full w-full h-full md:grid md:grid-cols-2 grid-cols-1 gap-4">
-                    <div className="text-content p-10 min-h-140 mb-10">
+                    <div className="text-content p-10 min-h-180">
                         <div className="mb-10">
                             <p className="text-lg">Hi, my name is</p>
-                            <h1 className="lg:text-[200px] text-9xl font-black tracking-tight -mt-6 lg:-mt-8 -ml-2">Ivan</h1>
+                            <h1 className="lg:text-[200px] text-9xl font-black tracking-tight -mt-4 lg:-mt-8 -ml-2">Ivan</h1>
                         </div>
                         <div>
                             <Terminal text="cat facts.txt" extra={facts} />
                         </div>
                     </div>
-                    <div className="text-content p-4 flex items-center">
+                    <div className="text-content p-4 flex items-center mb-20">
                         <div className="w-full mb-10 rounded-2xl backdrop-blur-3xl overflow-hidden max-h-full max-w-full border border-gray1">
                             <div className="bg-black1/40 w-full h-10 flex items-center px-4 gap-4">
                                 <div>

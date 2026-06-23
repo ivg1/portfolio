@@ -39,7 +39,7 @@ export default function SKills() {
     ];
 
     return (
-        <div className="skills w-full min-h-120 h-fit max-w-full p-10 mb-10">
+        <div className="skills w-full min-h-120 h-fit max-w-full p-10 mb-10 scroll-mt-20" id="skills">
             <div>
                 <p className="text-md text-gray2">stuff i know how to use</p>
                 <h1 className="text-6xl font-black tracking-tight">Skills</h1>
