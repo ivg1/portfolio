@@ -61,7 +61,7 @@ export default function FirstSee() {
                             </div>
                             <div className="bg-black2/20 h-full w-full max-h-full max-w-full p-4 whitespace-pre-wrap">
                                 <p>
-                                    I am a 16 year old <span className="text-red-500 font-bold">highschool</span> student, and mainly a <span className="text-red-500 font-bold">front-end</span> developer (but I also like to do harware projects)
+                                    I am a 16 year old <span className="text-red-500 font-bold">highschool</span> student, and mainly a <span className="text-red-500 font-bold">front-end</span> developer (but I also like to do hardware projects)
                                     <br />
                                     I code, play piano, compose, bike, and run.
                                     
