@@ -42,7 +42,7 @@ export default function FirstSee() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="bg-black2/20 h-full w-full max-h-full max-w-full p-4 whitespace-pre-wrap">
+                            <div className="bg-black2/20 h-full w-full min-h-fit max-w-full p-4 whitespace-pre-wrap">
                                 <p>
                                     I am a 16 year old <span className="text-red-500 font-bold">highschool</span> student, and I mostly spend my time doing sports and programming.
                                     <br /><br />
