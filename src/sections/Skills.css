@@ -1,0 +1,14 @@
+@keyframes rainbow-spin {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+.rainbow-text {
+    background: linear-gradient(90deg, #ff004c, #ff7a00, #ffee00, #00d26a, #00c2ff, #7a00ff, #ff004c);
+    background-size: 200% 100%;
+    animation: rainbow-spin 3s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}

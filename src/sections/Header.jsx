@@ -1,106 +1,141 @@
-import { Link, useNavigate } from "react-router-dom";
-import Button, { ButtonNoP } from "../components/buttons";
-import { useState } from "react";
+import "./Header.css"
+import React, { useEffect, useRef, useState } from "react"
 
-import Animations from "../components/animations";
+export default function Header({ alwaysShow = true }) {
+    const [menuOpen, setMenuOpen] = useState(false)
+    const headerRef = useRef(null)
 
-export default function Header() {
-    const [menuOpen, setMenuOpen] = useState(false);
+    const closeMenu = () => {
+        setMenuOpen(false)
+    }
 
+    // Close menu when clicking/tapping outside the header + menu
+    useEffect(() => {
+        if (!menuOpen) return
+
+        const handleOutsideClick = (event) => {
+            if (
+                headerRef.current &&
+                !headerRef.current.contains(event.target)
+            ) {
+                closeMenu()
+            }
+        }
+
+        document.addEventListener("mousedown", handleOutsideClick)
+        document.addEventListener("touchstart", handleOutsideClick)
+
+        return () => {
+            document.removeEventListener("mousedown", handleOutsideClick)
+            document.removeEventListener("touchstart", handleOutsideClick)
+        }
+    }, [menuOpen])
 
     return (
-        <div className="header min-w-full h-25 sticky top-0 left-0 py-4 px-6 z-50">
-            <div className={`rounded-2xl bg-black/20 flex justify-between items-center min-w-full min-h-full backdrop-blur-lg px-4 ${menuOpen && "rounded-b-none"}`}>
-                <div className="title flex items-center">
-                    <h1 className="text-xl font-bold">ivg1</h1>
-                    <span className="text-xl">
-                        &nbsp;|&nbsp;
-                    </span>
-                    <p className="font-bold flex items-center">Portfolio</p>
-                </div>
-                <div className="links gap-2 sm:flex hidden">
-                    <a href="#home">
-                        <Button option="blurredbg" color="default">
-                            Home
-                        </Button>
-                    </a>
-                    <a href="#projects">
-                        <Button option="blurredbg" color="default">
-                            Projects
-                        </Button>
-                    </a>
-                    <a href="#skills">
-                        <Button option="blurredbg" color="default">
-                            Skills
-                        </Button>
-                    </a>
-                    <a href="#contact">
-                        <Button option="blurredbg" color="default">
-                            Contact
-                        </Button>
-                    </a>
-                </div>
-                <div className="links gap-2 sm:hidden flex">
-                    <ButtonNoP color="default" onClick={() => setMenuOpen(!menuOpen)}>
-                        <div className="relative w-8 h-8 flex items-center justify-center">
-                            <span
-                                className={`absolute w-6 h-0.5 bg-gray2 transition-all duration-300 ${
-                                    menuOpen
-                                        ? "rotate-45"
-                                        : "-translate-y-2"
-                                }`}
-                            />
-
-                            <span
-                                className={`absolute w-6 h-0.5 bg-gray2 transition-all duration-300 ${
-                                    menuOpen
-                                        ? "opacity-0"
-                                        : "opacity-100"
-                                }`}
-                            />
-
-                            <span
-                                className={`absolute w-6 h-0.5 bg-gray2 transition-all duration-300 ${
-                                    menuOpen
-                                        ? "-rotate-45"
-                                        : "translate-y-2"
-                                }`}
-                            />
-                        </div>
-                    </ButtonNoP>
-                    
+        <header
+            ref={headerRef}
+            className={`header ${alwaysShow ? "always-show" : ""} ${
+                menuOpen ? "menu-open" : ""
+            }`}
+        >
+            <div className="header-left">
+                <div className="header-logo">
+                    <img
+                        src="/logo.png"
+                        alt="Logo"
+                        width="70"
+                        height="70"
+                        draggable={false}
+                        className="rounded-full"
+                    />
                 </div>
             </div>
-            <div
-                className={`sm:hidden overflow-hidden transition-all duration-400 ${
-                    menuOpen
-                        ? "max-h-fit opacity-100 bg-black/60 backdrop-blur-3xl rounded-b-2xl"
-                        : "max-h-0 opacity-0"
-                }`}
-            >
-                <div className="flex flex-col p-3 items-center gap-2">
-                    <a href="#home">
-                        <Button option="" color="default" onClick={() => {setMenuOpen(!menuOpen)}}>
+
+            <div className="header-right">
+                {/* Desktop navigation */}
+                <div className="header-links">
+                    <div className="header-link">
+                        <a href="#home">
                             Home
-                        </Button>
-                    </a>
-                    <a href="#projects">
-                        <Button option="" color="default" onClick={() => {setMenuOpen(!menuOpen)}}>
+                            <span className="text-gray-500 header-link-arrow">
+                                {" />"}
+                            </span>
+                        </a>
+                    </div>
+
+                    <div className="header-link">
+                        <a href="#projects">
                             Projects
-                        </Button>
-                    </a>
-                    <a href="#skills">
-                        <Button option="" color="default" onClick={() => {setMenuOpen(!menuOpen)}}>
+                            <span className="text-gray-500 header-link-arrow">
+                                {" />"}
+                            </span>
+                        </a>
+                    </div>
+
+                    <div className="header-link">
+                        <a href="#skills">
                             Skills
-                        </Button>
-                    </a>
-                    <a href="#contact">
-                        <Button option="" color="default" onClick={() => {setMenuOpen(!menuOpen)}}>
+                            <span className="text-gray-500 header-link-arrow">
+                                {" />"}
+                            </span>
+                        </a>
+                    </div>
+
+                    <div className="header-link">
+                        <a href="#contact">
                             Contact
-                        </Button>
+                            <span className="text-gray-500 header-link-arrow">
+                                {" />"}
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                {/* Mobile menu button */}
+                <button
+                    className="mobile-menu-button"
+                    onClick={() => setMenuOpen((prev) => !prev)}
+                    aria-label={menuOpen ? "Close menu" : "Open menu"}
+                    aria-expanded={menuOpen}
+                >
+                    <span className={menuOpen ? "open" : ""}></span>
+                    <span className={menuOpen ? "open" : ""}></span>
+                    <span className={menuOpen ? "open" : ""}></span>
+                </button>
+            </div>
+
+            {/* Mobile dropdown */}
+            <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+                <div className="mobile-menu-links">
+                    <a href="#home" onClick={closeMenu}>
+                        Home
+                        <span className="text-gray-500 header-link-arrow">
+                            {" />"}
+                        </span>
+                    </a>
+
+                    <a href="#projects" onClick={closeMenu}>
+                        Projects
+                        <span className="text-gray-500 header-link-arrow">
+                            {" />"}
+                        </span>
+                    </a>
+
+                    <a href="#skills" onClick={closeMenu}>
+                        Skills
+                        <span className="text-gray-500 header-link-arrow">
+                            {" />"}
+                        </span>
+                    </a>
+
+                    <a href="#contact" onClick={closeMenu}>
+                        Contact
+                        <span className="text-gray-500 header-link-arrow">
+                            {" />"}
+                        </span>
                     </a>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }

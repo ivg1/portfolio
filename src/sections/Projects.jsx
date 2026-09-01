@@ -2,6 +2,8 @@ import Button from "../components/buttons";
 
 import Animations from "../components/animations";
 
+import "./Projects.css";
+
 export default function Projects() {
     const projects = [
         {
@@ -20,7 +22,7 @@ export default function Projects() {
         },
         {
             title: "Portfolio",
-            description: "It is what you're looking at right now, made to tell about me, and showcase my projects & skills.",
+            description: "It is what you're looking at right now.",
             imgUrl: "/images/portfolioThumbnail.png",
             
             hasWebsite: false,
@@ -34,7 +36,7 @@ export default function Projects() {
         },
         {
             title: "Hackpad",
-            description: "One of my favorite hardware projects.\nI still remember how long it took to find the correct MicroPython firmware and libraries for usb stuff.",
+            description: "One of my favorite hardware projects.\nA diy hackpad made using an orpheus pico, 3D printed case, and more.",
             imgUrl: "/images/diyHackpadThumbnail.png",
 
             hasWebsite: false,

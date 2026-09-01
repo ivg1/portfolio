@@ -9,26 +9,9 @@ export default function FirstSee() {
         "16 years old",
         "Future Mechanical Engineer",
         "Software & hardware developer",
-        "Learning full-stack development",
-        "Living in Cyprus",
-        //"Learning fullstack coding",
+        "Go by ivg1 online",
+        "Always learning something new",
     ];
-
-    const code = `const person = {
-    name: "Ivan Garkusha",
-    age: 16,
-    activities: [
-        "Programming",
-        "Biking",
-        "Running",
-        "Solving problems at home"
-    ],
-    skills: [
-        "Javascript", "React",
-        "Node.js", "some C++"
-    ],
-    hasCoderFriends: true,
-}`;
 
     return (
         <div className="home first-see max-w-screen max-h-screen  min-h-fit w-full relative sm:px-[5%] lg:px-[10%] mb-10 scroll-mt-20" id="home">
@@ -45,8 +28,8 @@ export default function FirstSee() {
                             <Terminal text="cat facts.txt" extra={facts} />
                         </div>
                     </div>
-                    <div className="text-content p-4 flex items-center mb-20">
-                        <div className="w-full mb-10 rounded-2xl backdrop-blur-3xl overflow-hidden max-h-full max-w-full border border-gray1">
+                    <div className="text-content p-4 flex items-center mb-2">
+                        <div className="w-full h-120 min-h-fit mb-10 rounded-2xl backdrop-blur-3xl overflow-hidden max-h-full max-w-full border border-gray1">
                             <div className="bg-black1/40 w-full h-10 flex items-center px-4 gap-4">
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className="size-3" aria-hidden="true" role="img" width="64" height="64" viewBox="0 0 18 14" style={{ color: "rgb(208, 208, 208)" }}>
@@ -61,14 +44,15 @@ export default function FirstSee() {
                             </div>
                             <div className="bg-black2/20 h-full w-full max-h-full max-w-full p-4 whitespace-pre-wrap">
                                 <p>
-                                    I am a 16 year old <span className="text-red-500 font-bold">highschool</span> student, and mainly a <span className="text-red-500 font-bold">front-end</span> developer (but I also like to do harware projects)
-                                    <br />
-                                    I code, play piano, compose, bike, and run.
-                                    
+                                    I am a 16 year old <span className="text-red-500 font-bold">highschool</span> student, and I mostly spend my time doing sports and programming.
                                     <br /><br />
-                                    Recently I got into <span className="font-bold bg-linear-[25deg] from-red-600 to-orange-400 bg-clip-text text-transparent">full-stack</span> development.
+                                    I am a <span className="font-bold bg-linear-[25deg] from-red-600 to-orange-400 bg-clip-text text-transparent">full-stack</span> developer. I also do hardware projects.
                                     <br /><br />
-                                    I use <span className="text-blue-500 font-bold">arch</span> btw.
+                                    I started my programming journey in 2023 with a simple html webpage. Ever since then, I have slowly learned more about programming along my other interests, and now I know quite a bit about computers too.
+                                    <br /><br />
+                                    I am good at maths and physics and I am planning to become a <span className="text-red-500 font-bold">mechanical engineer</span> in the future. Progamming being my secondary interest.
+                                    <br /><br />
+                                    (this page is a work in progress, and everything is going to change on this page in the future)
                                 </p>
                             </div>
                         </div>

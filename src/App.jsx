@@ -16,7 +16,7 @@ import CursorBackground from "./components/effects/CursorBackground";
 
 function App() {
 	return (
-		<div className="">
+		<div className="spacing-for-header">
 			<CursorBackground />
 			<Header />
 			<FirstSee />

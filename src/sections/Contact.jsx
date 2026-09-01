@@ -2,10 +2,17 @@ import Button from "../components/buttons";
 
 export default function Contact() {
     return (
-        <div className="contact w-full h-100 max-w-full p-10 scroll-mt-20" id="contact">
+        <div className="contact w-full h-160 md:h-120 max-w-full p-10 scroll-mt-20" id="contact">
             <div>
                 <p className="text-md text-gray2">have questions?</p>
                 <h1 className="text-6xl font-black tracking-tight">Contact me</h1>
+                <div className="contact-container mt-10 flex flex-col sm:flex-row gap-1">
+                    <a href="mailto:ivg1developer@gmail.com" target="_blank">
+                        <p className="font-bold text-xl flex items-center text-red-500 max-w-fit max-h-fit transition-colors underline">
+                            ivg1developer@gmail.com
+                        </p>
+                    </a>
+                </div>
                 <div className="contact-container mt-10 flex flex-col sm:flex-row gap-4">
                     <a href="https://github.com/ivg1" target="_blank">
                         <h1 className="font-bold text-3xl flex items-center hover:text-red-500 max-w-fit max-h-fit transition-colors">
@@ -24,9 +31,6 @@ export default function Contact() {
 
                         </h1>
                     </a>
-                    <h1 className="font-bold text-3xl flex items-center hover:text-blue-500 max-w-fit max-h-fit transition-colors">
-                        
-                    </h1>
                 </div>
             </div>
         </div>

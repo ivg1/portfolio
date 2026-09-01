@@ -3,3 +3,15 @@
 .terminal {
     font-family: "Cascadia Code";
 }
+
+body {
+    color: rgb(240,240,240);
+}
+
+.body-content {
+    margin: 0 2rem;
+}
+
+.spacing-for-header {
+    margin-top: 6rem;
+}
