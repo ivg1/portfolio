@@ -12,7 +12,7 @@ export default function Projects() {
             imgUrl: "/images/heritageMarketThumbnail.png",
             
             hasWebsite: true,
-            websiteLink: "https://hpsm.run.place",
+            websiteLink: "https://market.ivg1.dev",
 
             hasRepo: true,
             repoLink: "https://github.com/ivg1/theHeritageMarket",
