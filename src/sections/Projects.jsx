@@ -14,6 +14,12 @@ export default function Projects() {
             hasWebsite: true,
             websiteLink: "https://market.ivg1.dev",
 
+            hasYTLink: false,
+            ytLink: "",
+
+            hasBlog: false,
+            blogLink: "",
+
             hasRepo: true,
             repoLink: "https://github.com/ivg1/theHeritageMarket",
             
@@ -27,11 +33,17 @@ export default function Projects() {
             
             hasWebsite: false,
             websiteLink: "",
+            
+            hasYTLink: false,
+            ytLink: "",
+
+            hasBlog: false,
+            blogLink: "",
 
             hasRepo: true,
             repoLink: "https://github.com/ivg1/portfolio",
             
-            delayShow: 0.2
+            delayShow: 0.1
 
         },
         {
@@ -42,10 +54,16 @@ export default function Projects() {
             hasWebsite: false,
             websiteLink: "",
 
+            hasYTLink: false,
+            ytLink: "",
+
+            hasBlog: false,
+            blogLink: "",
+
             hasRepo: true,
             repoLink: "https://github.com/ivg1/my_hackpad",
 
-            delayShow: 0.3
+            delayShow: 0.1
 
         },
         {
@@ -56,8 +74,74 @@ export default function Projects() {
             hasWebsite: false,
             websiteLink: "",
 
+            hasYTLink: true,
+            ytLink: "https://www.youtube.com/watch?v=MJqhpDTWf1E",
+
+            hasBlog: false,
+            blogLink: "",
+
             hasRepo: true,
             repoLink: "https://github.com/ivg1/arduino_stylophone",
+
+            delayShow: 0.1
+
+        },
+        {
+            title: "Organisers",
+            description: "Stackable oganisers that I designed. Pictured is one of the designs.",
+            imgUrl: "/images/organisersThumbnail.png",
+
+            hasWebsite: false,
+            websiteLink: "",
+
+            hasYTLink: false,
+            ytLink: "",
+
+            hasBlog: false,
+            blogLink: "",
+
+            hasRepo: false,
+            repoLink: "",
+
+            delayShow: 0.1
+
+        },
+        {
+            title: "Student exam card organiser",
+            description: "Got 1st place in my school's 3d printing competition.",
+            imgUrl: "/images/schoolOrganiserBoxThumbnail.png",
+
+            hasWebsite: false,
+            websiteLink: "",
+
+            hasYTLink: false,
+            ytLink: "",
+
+            hasBlog: true,
+            blogLink: "/blog/student-exam-card-organiser",
+
+            hasRepo: false,
+            repoLink: "",
+
+            delayShow: 0.1
+
+        },
+        {
+            title: "Tilter for intercom",
+            description: "Tilts the intercom towards the door so it is easier to enter home. Made for a friend.",
+            imgUrl: "/images/tilterFromWallThumbnail.png",
+
+            hasWebsite: false,
+            websiteLink: "",
+
+            hasYTLink: false,
+            ytLink: "",
+
+            hasBlog: true,
+            blogLink: "/blog/tilter-for-intercom",
+
+            hasRepo: false,
+            repoLink: "",
 
             delayShow: 0.1
 
@@ -69,8 +153,8 @@ export default function Projects() {
         <div className="projects w-full h-fit mb-10 max-w-full py-10 scroll-mt-20" id="projects">
             <div>
                 <div className="px-10">
-                    <p className="text-md text-gray2">check out some of my</p>
-                    <h1 className="text-6xl font-black tracking-tight">Projects</h1>
+                    <p className="text-md text-gray2">check out some</p>
+                    <h1 className="text-6xl font-black tracking-tight">Things I made</h1>
                 </div>
                 <div className="projects-list my-10 grid sm:grid-cols-[repeat(auto-fit,minmax(320px,1fr))] grid-cols-1 gap-4 px-2 sm:px-10">
                     {projects.map((project, i) => (
@@ -94,6 +178,18 @@ export default function Projects() {
                                                 <svg className="size-4.5 ml-2 align-middle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="64" height="64" viewBox="0 0 24 24" style={{ color: "rgb(255, 255, 255)"}}><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4m-8-2l8-8m0 0v5m0-5h-5"></path></svg>
                                             </Button>
                                         )}
+                                        {project.hasYTLink && (
+                                            <Button option="solidbgRed" link={project.ytLink}>
+                                                YouTube 
+                                                <svg className="size-4.5 ml-2 align-middle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="64" height="64" viewBox="0 0 24 24" style={{ color: "rgb(255, 255, 255)"}}><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4m-8-2l8-8m0 0v5m0-5h-5"></path></svg>
+                                            </Button>
+                                        )}
+                                        {project.hasBlog && (
+                                            <Button option="solidbgRed" link={project.blogLink}>
+                                                More 
+                                                <svg className="size-4.5 ml-2 align-middle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="64" height="64" viewBox="0 0 24 24" style={{ color: "rgb(255, 255, 255)"}}><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4m-8-2l8-8m0 0v5m0-5h-5"></path></svg>
+                                            </Button>
+                                        )}
                                         {project.hasRepo && (
                                             <Button option="blurredbg" color="grayBorder" link={project.repoLink}>
                                                 Repo 
@@ -108,7 +204,7 @@ export default function Projects() {
                         </Animations.FloatUp>
                     ))}
                 </div>
-                <p className="text-md text-center text-gray2">See the rest of my projects on <a href="https://github.com/ivg1" target="_blank" className="text-red-500 hover:underline">Github</a></p>
+                <p className="text-md text-center text-gray2">See more of my projects on <a href="https://github.com/ivg1" target="_blank" className="text-red-500 hover:underline">Github</a></p>
             </div>
         </div>
     )

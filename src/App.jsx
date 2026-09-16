@@ -1,4 +1,4 @@
-import { useState } from "react";;
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 //header & footer
@@ -13,8 +13,10 @@ import Contact from "./sections/Contact";
 
 //effects
 import CursorBackground from "./components/effects/CursorBackground";
+import BlogPage from "./pages/BlogPage";
+import BlogPostPage from "./pages/BlogPostPage";
 
-function App() {
+function HomePage() {
 	return (
 		<div className="spacing-for-header">
 			<CursorBackground />
@@ -36,6 +38,16 @@ function App() {
 
 			<Footer />
 		</div>
+	)
+}
+
+function App() {
+	return (
+		<Routes>
+			<Route path="/" element={<HomePage />} />
+			<Route path="/blog" element={<BlogPage />} />
+			<Route path="/blog/:slug" element={<BlogPostPage />} />
+		</Routes>
 	)
 }
 

@@ -55,7 +55,7 @@ export default function Header({ alwaysShow = true }) {
                 {/* Desktop navigation */}
                 <div className="header-links">
                     <div className="header-link">
-                        <a href="#home">
+                        <a href="/#home">
                             Home
                             <span className="text-gray-500 header-link-arrow">
                                 {" />"}
@@ -64,7 +64,7 @@ export default function Header({ alwaysShow = true }) {
                     </div>
 
                     <div className="header-link">
-                        <a href="#projects">
+                        <a href="/#projects">
                             Projects
                             <span className="text-gray-500 header-link-arrow">
                                 {" />"}
@@ -73,7 +73,7 @@ export default function Header({ alwaysShow = true }) {
                     </div>
 
                     <div className="header-link">
-                        <a href="#skills">
+                        <a href="/#skills">
                             Skills
                             <span className="text-gray-500 header-link-arrow">
                                 {" />"}
@@ -82,8 +82,17 @@ export default function Header({ alwaysShow = true }) {
                     </div>
 
                     <div className="header-link">
-                        <a href="#contact">
+                        <a href="/#contact">
                             Contact
+                            <span className="text-gray-500 header-link-arrow">
+                                {" />"}
+                            </span>
+                        </a>
+                    </div>
+
+                    <div className="header-link">
+                        <a href="/blog">
+                            Blog
                             <span className="text-gray-500 header-link-arrow">
                                 {" />"}
                             </span>
@@ -107,29 +116,36 @@ export default function Header({ alwaysShow = true }) {
             {/* Mobile dropdown */}
             <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
                 <div className="mobile-menu-links">
-                    <a href="#home" onClick={closeMenu}>
+                    <a href="/#home" onClick={closeMenu}>
                         Home
                         <span className="text-gray-500 header-link-arrow">
                             {" />"}
                         </span>
                     </a>
 
-                    <a href="#projects" onClick={closeMenu}>
+                    <a href="/#projects" onClick={closeMenu}>
                         Projects
                         <span className="text-gray-500 header-link-arrow">
                             {" />"}
                         </span>
                     </a>
 
-                    <a href="#skills" onClick={closeMenu}>
+                    <a href="/#skills" onClick={closeMenu}>
                         Skills
                         <span className="text-gray-500 header-link-arrow">
                             {" />"}
                         </span>
                     </a>
 
-                    <a href="#contact" onClick={closeMenu}>
+                    <a href="/#contact" onClick={closeMenu}>
                         Contact
+                        <span className="text-gray-500 header-link-arrow">
+                            {" />"}
+                        </span>
+                    </a>
+
+                    <a href="/blog" onClick={closeMenu}>
+                        Blog
                         <span className="text-gray-500 header-link-arrow">
                             {" />"}
                         </span>

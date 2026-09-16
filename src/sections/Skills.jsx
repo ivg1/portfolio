@@ -80,7 +80,7 @@ export default function SKills() {
                                 </p>
                             </div>
                         </div>
-                        <div className="bg-black2/20 h-full w-full max-h-full max-w-full p-4 whitespace-pre-wrap">
+                        <div className="bg-black2/20 h-full w-full min-h-fit max-w-full p-4 whitespace-pre-wrap">
                             <p>
                                 I do many things myself, and that led me to learn <b className="text-red-500">lots</b> of skills ranging from coding all the way to reflooring rooms.
                                 <br /><br />

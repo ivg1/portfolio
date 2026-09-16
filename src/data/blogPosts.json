@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "student-exam-card-organiser",
+    "title": "Student exam card organiser",
+    "summary": "A compact 3D printed organiser that won 1st place in my school's 3D printing competition.",
+    "file": "student-exam-card-organiser.md"
+  },
+  {
+    "slug": "tilter-for-intercom",
+    "title": "Tilter for intercom",
+    "summary": "A practical 3D printed mount that tilts an intercom towards the door for easier access.",
+    "file": "tilter-for-intercom.md"
+  }
+]

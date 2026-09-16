@@ -1,16 +1,19 @@
 import Button from "../components/buttons";
 
+import { MdEmail } from "react-icons/md";
+
 export default function Contact() {
     return (
         <div className="contact w-full h-160 md:h-120 max-w-full p-10 scroll-mt-20" id="contact">
             <div>
-                <p className="text-md text-gray2">have questions?</p>
+                <p className="text-md text-gray2">want to get in touch?</p>
                 <h1 className="text-6xl font-black tracking-tight">Contact me</h1>
                 <div className="contact-container mt-10 flex flex-col sm:flex-row gap-1">
                     <a href="mailto:ivg1developer@gmail.com" target="_blank">
-                        <p className="font-bold text-xl flex items-center text-red-500 max-w-fit max-h-fit transition-colors underline">
-                            ivg1developer@gmail.com
-                        </p>
+                        <h1 className="font-bold text-3xl flex items-center hover:text-blue-500 max-w-fit max-h-fit transition-colors">
+                            Email
+                            <MdEmail className="ml-2 align-middle w-10 h-10" />
+                        </h1>
                     </a>
                 </div>
                 <div className="contact-container mt-10 flex flex-col sm:flex-row gap-4">
@@ -29,6 +32,14 @@ export default function Contact() {
                                 <path d="M18.942 5.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.586 11.586 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3 17.392 17.392 0 0 0-2.868 11.662 15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.638 10.638 0 0 1-1.706-.83c.143-.106.283-.217.418-.331a11.664 11.664 0 0 0 10.118 0c.137.114.277.225.418.331-.544.328-1.116.606-1.71.832a12.58 12.58 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM8.678 14.813a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.929 1.929 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
                             </svg>
 
+                        </h1>
+                    </a>
+                    <a href="https://www.youtube.com/@ivg1510" target="_blank">
+                        <h1 className="font-bold text-3xl flex items-center hover:text-red-500 max-w-fit max-h-fit transition-colors">
+                            YouTube
+                            <svg class="ml-2 align-middle w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z" clip-rule="evenodd"/>
+                            </svg>
                         </h1>
                     </a>
                 </div>
