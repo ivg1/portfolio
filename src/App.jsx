@@ -8,6 +8,7 @@ import Footer from "./sections/Footer";
 //pages
 import FirstSee from "./sections/FirstSee";
 import Projects from "./sections/Projects";
+import Education from "./sections/Education";
 import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
 
@@ -32,6 +33,7 @@ function HomePage() {
 
 			<div className="sm:px-[5%] lg:px-[10%]">
 				<Projects />
+				<Education />
 				<Skills />
 				<Contact />
 			</div>

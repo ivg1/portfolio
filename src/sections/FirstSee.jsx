@@ -7,14 +7,15 @@ import Animations from "../components/animations";
 export default function FirstSee() {
     const facts = [
         "16 years old",
-        "Future Mechanical Engineer",
-        "Software & hardware developer",
+        "Wanna be Mechanical Engineer",
+        "Software & hardware enthusiast",
+        "Good at physics & maths",
         "Go by ivg1 online",
         "Always learning something new",
     ];
 
     return (
-        <div className="home first-see max-w-screen max-h-screen  min-h-fit w-full relative sm:px-[5%] lg:px-[10%] mb-10 scroll-mt-20" id="home">
+        <div className="home first-see max-w-screen min-h-screen  min-h-fit w-full relative sm:px-[5%] lg:px-[10%] mb-10 scroll-mt-20" id="home">
             <div className="flex justify-center items-center w-full h-full">
                 <div className="first-see-content max-w-full w-full h-full md:grid md:grid-cols-2 grid-cols-1 gap-4">
                     <div className="text-content p-10 min-h-180">
@@ -29,7 +30,7 @@ export default function FirstSee() {
                         </div>
                     </div>
                     <div className="text-content p-4 flex items-center mb-2">
-                        <div className="w-full h-120 min-h-fit mb-10 rounded-2xl backdrop-blur-3xl overflow-hidden max-h-full max-w-full border border-gray1">
+                        <div className="w-full min-h-fit mb-10 rounded-2xl backdrop-blur-3xl overflow-hidden max-h-full max-w-full border border-gray1">
                             <div className="bg-black1/40 w-full h-10 flex items-center px-4 gap-4">
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className="size-3" aria-hidden="true" role="img" width="64" height="64" viewBox="0 0 18 14" style={{ color: "rgb(208, 208, 208)" }}>
@@ -44,15 +45,14 @@ export default function FirstSee() {
                             </div>
                             <div className="bg-black2/20 h-full w-full min-h-fit max-w-full p-4 whitespace-pre-wrap">
                                 <p>
-                                    I am a 16 year old <span className="text-red-500 font-bold">highschool</span> student, and I mostly spend my time doing sports and programming.
+                                    I am a 16 year old <span className="text-red-500 font-bold">highschool</span> student, and I mostly spend my time doing sports, engineering, and programming.
                                     <br /><br />
-                                    I am a <span className="font-bold bg-linear-[25deg] from-red-600 to-orange-400 bg-clip-text text-transparent">full-stack</span> developer. I also do hardware projects.
+                                    I can do <span className="font-bold bg-linear-[25deg] from-red-600 to-orange-400 bg-clip-text text-transparent">full-stack</span> and also <span className="font-bold bg-linear-[25deg] from-blue-500 to-purple-500 bg-clip-text text-transparent">hardware</span> projects.
+                                    It shouldn't come as a surprise that I know a lot about computers.
                                     <br /><br />
-                                    I started my programming journey in 2023 with a simple html webpage. Ever since then, I have slowly learned more about programming along my other interests, and now I know quite a bit about computers too.
+                                    I am good at physics and maths and I want to become a <span className="text-red-500 font-bold">mechanical engineer</span> in the future.
                                     <br /><br />
-                                    I am good at maths and physics and I am planning to become a <span className="text-red-500 font-bold">mechanical engineer</span> in the future. Progamming being my secondary interest.
-                                    <br /><br />
-                                    (this page is a work in progress, and everything is going to change on this page in the future)
+                                    I am also quite athletic and play the piano very well with 8yrs of experience.
                                 </p>
                             </div>
                         </div>

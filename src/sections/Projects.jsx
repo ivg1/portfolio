@@ -128,7 +128,7 @@ export default function Projects() {
         },
         {
             title: "Tilter for intercom",
-            description: "Tilts the intercom towards the door so it is easier to enter home. Made for a friend.",
+            description: "Tilts the intercom towards the door so it is easier to enter home.",
             imgUrl: "/images/tilterFromWallThumbnail.png",
 
             hasWebsite: false,

@@ -1,7 +1,7 @@
 import "./Skills.css";
 import React from "react";
 
-export default function SKills() {
+export default function Skills() {
     const codingSkills = [
         {
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
@@ -63,11 +63,11 @@ export default function SKills() {
         <div className="skills w-full min-h-120 h-fit max-w-full p-10 mb-10 scroll-mt-20" id="skills">
             <div>
                 <div className="py-10">
-                    <p className="text-md text-gray2">a list of my</p>
+                    <p className="text-md text-gray2">some of my</p>
                     <h1 className="text-6xl font-black tracking-tight">Skills</h1>
                 </div>
-                <div className="text-content flex items-center mb-4">
-                    <div className="w-full h-40 min-h-fit mb-10 rounded-2xl backdrop-blur-3xl overflow-hidden max-h-full max-w-full border border-gray1">
+                <div className="mb-10">
+                    <div className="w-full min-h-fit mb-10 rounded-2xl backdrop-blur-3xl overflow-hidden max-h-full max-w-full border border-gray1">
                         <div className="bg-black1/40 w-full h-10 flex items-center px-4 gap-4">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className="size-3" aria-hidden="true" role="img" width="64" height="64" viewBox="0 0 18 14" style={{ color: "rgb(208, 208, 208)" }}>
@@ -76,15 +76,13 @@ export default function SKills() {
                             </div>
                             <div>
                                 <p className="text-gray2 tracking-wide text-sm align-middle">
-                                    idkHowToNameThis
+                                    short msg
                                 </p>
                             </div>
                         </div>
                         <div className="bg-black2/20 h-full w-full min-h-fit max-w-full p-4 whitespace-pre-wrap">
                             <p>
-                                I do many things myself, and that led me to learn <b className="text-red-500">lots</b> of skills ranging from coding all the way to reflooring rooms.
-                                <br /><br />
-                                Below is a list of some of the skills I have.
+                                I have a lot of skills ranging from programming to sports, music, and more. And I am always learning something new.
                             </p>
                         </div>
                     </div>

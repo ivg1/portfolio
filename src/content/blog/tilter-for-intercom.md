@@ -1,4 +1,4 @@
-This is a thing I made for a friend of mine.
+This is a thing I made for my neighbor.
 <br /><br />
 Image below shows how it looks behind the panel:
 ![image of before](/blogPosts/lookBehindTheIntercom.png)

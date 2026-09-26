@@ -73,6 +73,15 @@ export default function Header({ alwaysShow = true }) {
                     </div>
 
                     <div className="header-link">
+                        <a href="/#education" onClick={closeMenu}>
+                            Education
+                            <span className="text-gray-500 header-link-arrow">
+                                {" />"}
+                            </span>
+                        </a>
+                    </div>
+
+                    <div className="header-link">
                         <a href="/#skills">
                             Skills
                             <span className="text-gray-500 header-link-arrow">
@@ -125,6 +134,13 @@ export default function Header({ alwaysShow = true }) {
 
                     <a href="/#projects" onClick={closeMenu}>
                         Projects
+                        <span className="text-gray-500 header-link-arrow">
+                            {" />"}
+                        </span>
+                    </a>
+
+                    <a href="/#education" onClick={closeMenu}>
+                        Education
                         <span className="text-gray-500 header-link-arrow">
                             {" />"}
                         </span>
