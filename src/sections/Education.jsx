@@ -1,4 +1,3 @@
-import "./Skills.css";
 import React from "react";
 
 export default function Education() {
@@ -16,6 +15,8 @@ export default function Education() {
         { name: "Cyprus Math Olympiad", desc: "Earned 3rd place once" },
         { name: "Cyprus Informatics Olympiad", desc: "Reached the final 2 times" },
         { name: "Cyprus Pancyprian Competition", desc: "Participated multiple times, nearly passed next round" },
+        { name: "UKMT Senior Maths Challenge", desc: "Multiple bronze awards"},
+        { name: "UKMT Intermediate Maths Challenge", desc: "Multiple silver & bronze awards"},
         { name: "Kangourou Competitions", desc: "Earned medals for Math, French, English." },
     ];
     const others = [
