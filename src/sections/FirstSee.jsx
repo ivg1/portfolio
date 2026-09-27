@@ -6,12 +6,12 @@ import Animations from "../components/animations";
 
 export default function FirstSee() {
     const facts = [
-        "16 years old",
-        "Wanna be Mechanical Engineer",
-        "Software & hardware enthusiast",
-        "Good at physics & maths",
-        "Go by ivg1 online",
-        "Always learning something new",
+        "16 years old.",
+        "Wanna be Mechanical Engineer.",
+        "Software & hardware enthusiast.",
+        "Good at physics & maths.",
+        "Go by ivg1 online.",
+        "Always learning something new.",
     ];
 
     return (

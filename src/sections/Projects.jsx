@@ -159,7 +159,7 @@ export default function Projects() {
                 <div className="projects-list my-10 grid sm:grid-cols-[repeat(auto-fit,minmax(320px,1fr))] grid-cols-1 gap-4 px-2 sm:px-10">
                     {projects.map((project, i) => (
                         <Animations.FloatUp delay={project.delayShow}>
-                            <div className="project-item h-fit rounded-2xl border border-gray1 bg-black/20 backdrop-blur-3xl flex flex-col overflow-clip" key={i}>
+                            <div className="project-item h-fit rounded-2xl border border-gray1 bg-black/20 backdrop-blur-3xl flex flex-col overflow-clip" key={i} data-nosnippet>
                                 <div className="flex items-center justify-center w-full relative h-40 z-1 overflow-clip">
                                     <div className="absolute top-0 left-0 w-full h-full">
                                         <img src={project.imgUrl} className="w-full h-full object-cover object-top" />
