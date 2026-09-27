@@ -41,7 +41,7 @@ export default function Header({ alwaysShow = true }) {
             <div className="header-left">
                 <div className="header-logo">
                     <img
-                        src="/logo.png"
+                        src="/favicon.png"
                         alt="Logo"
                         width="70"
                         height="70"
