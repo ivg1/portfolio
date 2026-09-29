@@ -7,7 +7,9 @@ export default function Education() {
         { name: "Computer Science", score: "A*" },
         { name: "Biology", score: "A*" },
         { name: "Chemistry", score: "A*" },
+        { name: "Russian 1st Language", score: "A*" },
         { name: "English 1st Language", score: "A" },
+        { name: "French", score: "A" },
         { name: "Business Studies", score: "A" },
         { name: "Music", score: "B" },
     ];
