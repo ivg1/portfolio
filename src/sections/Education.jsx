@@ -19,11 +19,13 @@ export default function Education() {
         { name: "Cyprus Pancyprian Competition", desc: "Participated multiple times, nearly passed next round" },
         { name: "UKMT Senior Maths Challenge", desc: "Multiple bronze awards"},
         { name: "UKMT Intermediate Maths Challenge", desc: "Multiple silver & bronze awards"},
+        { name: "3D Priting Competition", desc: "1st place" },
         { name: "Kangourou Competitions", desc: "Earned medals for Math, French, English." },
     ];
     const others = [
         { name: "Elinomathia", desc: "A2 certificate (2026)" },
-
+        { name: "Piano Trinity Grades 1-7", desc: "All merit and above" },
+        { name: "Piano Trinity Grade 8", desc: "Soon to finish" },
     ]
 
     return (
