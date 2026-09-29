@@ -7,7 +7,7 @@ export default function Education() {
         { name: "Computer Science", score: "A*" },
         { name: "Biology", score: "A*" },
         { name: "Chemistry", score: "A*" },
-        { name: "Russian 1st Language", score: "A*" },
+        { name: "Russian", score: "A*" },
         { name: "English 1st Language", score: "A" },
         { name: "French", score: "A" },
         { name: "Business Studies", score: "A" },
@@ -19,11 +19,13 @@ export default function Education() {
         { name: "Cyprus Pancyprian Competition", desc: "Participated multiple times, nearly passed next round" },
         { name: "UKMT Senior Maths Challenge", desc: "Multiple bronze awards"},
         { name: "UKMT Intermediate Maths Challenge", desc: "Multiple silver & bronze awards"},
-        { name: "Kangourou Competitions", desc: "Earned medals for Math, French, English." },
+        { name: "3D Priting Competition", desc: "1st place" },
+        { name: "Kangourou Competitions", desc: "Earned medals for French, English." },
     ];
     const others = [
         { name: "Elinomathia", desc: "A2 certificate (2026)" },
-
+        { name: "Piano Trinity Grades 1-7", desc: "All merit and above" },
+        { name: "Piano Trinity Grade 8", desc: "Soon to finish" },
     ]
 
     return (
