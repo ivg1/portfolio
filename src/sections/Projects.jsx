@@ -7,9 +7,9 @@ import "./Projects.css";
 export default function Projects() {
     const projects = [
         {
-            title: "The Heritage Market",
+            title: "School Market",
             description: "A platform I developed to make it easier for students to buy/sell school stuff. My first full-stack project.",
-            imgUrl: "/images/heritageMarketThumbnail.png",
+            imgUrl: "/images/schoolMarketThumbnail.png",
             
             hasWebsite: true,
             websiteLink: "https://market.ivg1.dev",
@@ -21,7 +21,7 @@ export default function Projects() {
             blogLink: "",
 
             hasRepo: true,
-            repoLink: "https://github.com/ivg1/theHeritageMarket",
+            repoLink: "https://github.com/ivg1/schoolMarket",
             
             delayShow: 0.1
 
